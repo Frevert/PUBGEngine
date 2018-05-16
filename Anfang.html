@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="app.js"></script>
 </head>
 <body>
     <h1 align="center">Pubg API Test</h1>
-    <form align="center" id="playerForm">
-        <input type="text" value="Playername"></textbox>
-        <button type="submit" value="Search">Search</button> 
+    <form align="center" method="GET" action="daten.txt">
+        <input type="text" id="playerName" name="username"/>
+        <button>Search</button> 
     </form>
     <div id="jsonResponseDiv">
     </div>
+	<div><label>Name: </label><label id="name"/></div>
+	<div id="matches"/>
+    <script src="app.js"></script>
 </body>
 </html>
